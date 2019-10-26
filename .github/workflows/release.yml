@@ -2,8 +2,6 @@ on:
   push:
     tags:
       - 'v*'
-  release:
-    types: [published]
 
 name: Publish Package
 
@@ -19,7 +17,8 @@ jobs:
       - name: Check package version
         uses: technote-space/package-version-check-action@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          COMMIT_DISABLED: 1
       - name: Install Package dependencies
         run: yarn install
       - name: Test
@@ -27,11 +26,11 @@ jobs:
       - name: Build
         run: yarn build
       - name: Publish
-        uses: actions/npm@master
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN
+          npm publish
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        with:
-          args: publish
       - uses: 8398a7/action-slack@v1
         with:
           type: failure
