@@ -358,10 +358,10 @@
   dependencies:
     "@types/node" "^12.11.1"
 
-"@technote-space/github-action-test-helper@^0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@technote-space/github-action-test-helper/-/github-action-test-helper-0.0.19.tgz#f23276700d9e543f1ce9daea389503ae13d79b81"
-  integrity sha512-oJN6mmbgMnKwF79HcFyWgIutplXiCMEc5rjHR1RwF68ycLBZmp7F+FriMRpB6OZaF7vS2Xbsi7XjshNZoZuTsg==
+"@technote-space/github-action-test-helper@^0.0.21":
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/@technote-space/github-action-test-helper/-/github-action-test-helper-0.0.21.tgz#1970be572886989f0287e91656e732ba998988ee"
+  integrity sha512-96GA9kfIb4s7jJ4KO99c/8kYwBjkLuigDNz5pNzu4LKzTiWRFYAwWKE1cODzO6sNsyHbDsyQngkIp1EB8c17lQ==
   dependencies:
     "@actions/github" "^1.1.0"
 
