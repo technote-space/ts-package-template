@@ -1,7 +1,7 @@
 # TypeScript Package Template
 
 [![npm version](https://badge.fury.io/js/%40technote-space%2Fts-package-template.svg)](https://badge.fury.io/js/%40technote-space%2Fts-package-template)
-[![Build Status](https://github.com/technote-space/ts-package-template/workflows/Build/badge.svg)](https://github.com/technote-space/ts-package-template/actions)
+[![CI Status](https://github.com/technote-space/ts-package-template/workflows/CI/badge.svg)](https://github.com/technote-space/ts-package-template/actions)
 [![codecov](https://codecov.io/gh/technote-space/ts-package-template/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/ts-package-template)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/ts-package-template/badge)](https://www.codefactor.io/repository/github/technote-space/ts-package-template)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/technote-space/ts-package-template/blob/master/LICENSE)
