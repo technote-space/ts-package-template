@@ -21,7 +21,7 @@ if [[ $yn != [yY] ]]; then
 	exit
 fi
 
-sed -i "s/technote-space/${OWNER}g/" .github/CODEOWNERS
+sed -i "s/technote-space/${OWNER}/g" .github/CODEOWNERS
 sed -i "s/technote-space/${OWNER}/g" README.md
 sed -i "s/ts-package-template/${REPO}/g" README.md
 sed -i "s/technote-space\/ts-package-template/${OWNER}\/${REPO}/g" package.json
