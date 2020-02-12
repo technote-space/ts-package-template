@@ -1,7 +1,9 @@
 on:
   pull_request:
     types: [opened]
+
 name: Pull Request opened
+
 jobs:
   assignToProject:
     name: Assign PullRequest to Project
@@ -28,6 +30,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PR Labeler
-        uses: technote-fork/pr-labeler-action@v3
+        uses: technote-space/pr-labeler-action@v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
