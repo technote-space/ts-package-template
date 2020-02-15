@@ -14,7 +14,16 @@ if [[ -z "${REPO}" ]]; then
 	exit
 fi
 
+echo "Title: [= ]"
+read -r TITLE
+
+echo "DESCRIOTION: [= ]"
+read -r DESCRIOTION
+
+
 echo "Repository: ${OWNER}/${REPO}"
+echo "Title: ${TITLE}"
+echo "Description: ${DESCRIOTION}"
 # shellcheck disable=SC2162
 read -n1 -p "ok? (y/N): " yn
 if [[ $yn != [yY] ]]; then
@@ -25,6 +34,9 @@ sed -i "s/technote-space/${OWNER}/g" .github/CODEOWNERS
 sed -i "s/technote-space/${OWNER}/g" README.md
 sed -i "s/ts-package-template/${REPO}/g" README.md
 sed -i "s/technote-space\/ts-package-template/${OWNER}\/${REPO}/g" package.json
+sed -i "s/Template for npm package\./${DESCRIOTION}/g" README.md
+sed -i "s/Template for npm package\./${DESCRIOTION}/g" package.json
+sed -i "s/TypeScript Package Template/${TITLE}/g" README.md
 
 if [[ "${OWNER}" != 'technote-space' ]]; then
 	rm -f .github/FUNDING.yml
@@ -36,6 +48,8 @@ sed -i '/setup.sh/d' package.json
 touch __DELETE__
 
 cat << EOS
+
+
 Please edit package.json
   - version
   - description
