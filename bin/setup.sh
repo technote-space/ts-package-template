@@ -21,9 +21,12 @@ echo "DESCRIOTION: [= ]"
 read -r DESCRIOTION
 
 
-echo "Repository: ${OWNER}/${REPO}"
-echo "Title: ${TITLE}"
+echo ""
+echo "=================================="
+echo "Repository:  ${OWNER}/${REPO}"
+echo "Title:       ${TITLE}"
 echo "Description: ${DESCRIOTION}"
+echo "=================================="
 # shellcheck disable=SC2162
 read -n1 -p "ok? (y/N): " yn
 if [[ $yn != [yY] ]]; then
