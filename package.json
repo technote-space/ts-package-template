@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/ts-package-template",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Template for npm package.",
   "author": {
     "name": "Technote",
@@ -29,17 +29,17 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@technote-space/github-action-test-helper": "^0.3.4",
+    "@technote-space/github-action-test-helper": "^0.3.6",
     "@types/jest": "^25.2.1",
-    "@types/node": "^13.11.0",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
+    "@types/node": "^13.13.4",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
     "eslint": "^6.8.0",
-    "husky": "^4.2.3",
-    "jest": "^25.2.7",
-    "jest-circus": "^25.2.7",
-    "lint-staged": "^10.1.2",
-    "ts-jest": "^25.3.1",
+    "husky": "^4.2.5",
+    "jest": "^25.4.0",
+    "jest-circus": "^25.4.0",
+    "lint-staged": "^10.1.7",
+    "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
   },
   "publishConfig": {
