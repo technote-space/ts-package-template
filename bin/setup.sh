@@ -52,6 +52,10 @@ fi
 sed -i "s/technote-space/${OWNER}/g" .github/CODEOWNERS
 sed -i "s/technote-space/${OWNER}/g" README.md
 sed -i "s/ts-package-template/${REPO}/g" README.md
+sed -i "s/technote-space/${OWNER}/g" .github/CONTRIBUTING.md
+sed -i "s/ts-package-template/${REPO}/g" .github/CONTRIBUTING.md
+sed -i "s/technote-space/${OWNER}/g" .github/ISSUE_TEMPLATE/bug_report.md
+sed -i "s/technote-space/${OWNER}/g" .github/ISSUE_TEMPLATE/feature_request.md
 sed -i "s/technote-space\/ts-package-template/${OWNER}\/${REPO}/g" package.json
 sed -i "s/Template for npm package\./${DESCRIOTION}/g" README.md
 sed -i "s/Template for npm package\./${DESCRIOTION}/g" package.json
