@@ -1,5 +1,6 @@
 /* eslint-disable no-magic-numbers */
-import {add, repeat} from '../src';
+import { describe, expect, it, vi } from 'vitest';
+import { add, repeat } from '../src';
 
 describe('add', () => {
   it('should add number', () => {
@@ -9,7 +10,7 @@ describe('add', () => {
 
 describe('repeat', () => {
   it('should not call callback', async() => {
-    const callback = jest.fn();
+    const callback = vi.fn();
 
     await repeat(callback, 0);
 
@@ -17,7 +18,7 @@ describe('repeat', () => {
   });
 
   it('should call callback 3 times', async() => {
-    const callback = jest.fn();
+    const callback = vi.fn();
 
     await repeat(callback, 3);
 
