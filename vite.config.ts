@@ -5,5 +5,11 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   test: {
     setupFiles: './src/setup.ts',
+    clearMocks: true,
+    mockReset: true,
+    restoreMocks: true,
+    coverage: {
+      reporter: ['html', 'lcov'],
+    },
   },
 });
