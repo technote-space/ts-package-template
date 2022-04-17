@@ -8,5 +8,8 @@ export default defineConfig({
     clearMocks: true,
     mockReset: true,
     restoreMocks: true,
+    coverage: {
+      reporter: ['html', 'lcov'],
+    },
   },
 });
