@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { WAIT_MS, INTERVAL_MS } from './constant';
+import { WAIT_MS, INTERVAL_MS } from './constant.js';
 
 describe('INTERVAL_MS', () => {
   it('should return actual value', () => {

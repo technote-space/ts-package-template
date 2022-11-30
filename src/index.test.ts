@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers */
 import { describe, expect, it, vi } from 'vitest';
-import { add, repeat } from '../src';
+import { add, repeat } from './index.js';
 
 describe('add', () => {
   it('should add number', () => {

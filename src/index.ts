@@ -1,4 +1,4 @@
-import { WAIT_MS } from './constant';
+import { WAIT_MS } from './constant.js';
 
 export const add = (num1: number, num2: number): number => num1 + num2;
 
