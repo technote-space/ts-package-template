@@ -2,7 +2,6 @@ import pluginTypescript from '@rollup/plugin-typescript';
 
 const common = {
   input: 'src/index.ts',
-  external: ['vitest'],
   plugins: [
     pluginTypescript(),
   ],
