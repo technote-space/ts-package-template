@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/ts-package-template",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Template for npm package.",
   "keywords": [
     "template"
